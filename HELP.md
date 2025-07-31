@@ -50,7 +50,7 @@ The result of this authorization is sent to the client's callback URL.
 
 If the internal service does not respond in time, the result is marked as unknown.
 
-We used BlockingQueue to simulate asynchronous messaging between the API and the internal authorization service.
+I used BlockingQueue to simulate asynchronous messaging between the API and the internal authorization service.
 
 
 ### Key Components
@@ -92,7 +92,7 @@ The /callback endpoint is used to receive the result of an asynchronous authoriz
 
 **Purpose:**
 When a charging session request is initiated by a driver (via /initiate-session), the server processes it asynchronously. Once the decision (e.g., allowed or denied) is made, the result is posted to the callback URL that the client had provided.
-To test this mechanism during development, we implement /callback in our own application.
+To test this mechanism during development, I implement /callback in same application.
 
 **Reason for adding :**
 
